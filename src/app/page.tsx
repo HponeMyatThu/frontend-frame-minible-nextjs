@@ -1,7 +1,6 @@
-export default function Home() {
-  return (
-    <body>
-      <h1>Hello world</h1>
-    </body>
-  );
+import {redirect} from 'next/navigation';
+
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect('/en');
 }

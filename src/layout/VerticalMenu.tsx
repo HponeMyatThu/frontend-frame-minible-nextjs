@@ -1,3 +1,5 @@
+import { AppRoute } from "@/utils/app.routes";
+import Link from "next/link";
 import React from "react";
 
 const VerticalMenu = () => {
@@ -5,7 +7,7 @@ const VerticalMenu = () => {
     <div className="vertical-menu">
       {/* LOGO */}
       <div className="navbar-brand-box">
-        <a href="#" className="logo logo-dark">
+        <a href="index.html" className="logo logo-dark">
           <span className="logo-sm">
             <img src="/assets/images/logo-sm.png" alt="" height="22" />
           </span>
@@ -38,13 +40,10 @@ const VerticalMenu = () => {
           <ul className="metismenu list-unstyled" id="side-menu">
             <li className="menu-title">Menu</li>
             <li>
-              <a href="#">
+              <Link href={AppRoute().DashboardPage}>
                 <i className="uil-home-alt"></i>
-                <span className="badge rounded-pill bg-primary float-end">
-                  01
-                </span>
                 <span>Dashboard</span>
-              </a>
+              </Link>
             </li>
 
             <li>
@@ -103,10 +102,10 @@ const VerticalMenu = () => {
             <li className="menu-title">Apps</li>
 
             <li>
-              <a href="calendar.html" className="waves-effect">
+              <Link href="/views/calendar" className="waves-effect">
                 <i className="uil-calender"></i>
                 <span>Calendar</span>
-              </a>
+              </Link>
             </li>
 
             <li>
