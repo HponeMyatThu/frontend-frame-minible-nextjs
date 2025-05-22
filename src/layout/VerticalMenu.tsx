@@ -3,6 +3,10 @@ import Link from "next/link";
 import React from "react";
 
 const VerticalMenu = () => {
+  if (typeof window !== "undefined") {
+    return;
+  }
+
   return (
     <div className="vertical-menu">
       {/* LOGO */}

@@ -86,6 +86,8 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></Script>
         <Script src="/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></Script>
         <Script src="/assets/js/pages/datatables.init.js"></Script>
+        <Script src="/assets/libs/apexcharts/apexcharts.min.js"></Script>
+        <Script src="/assets/js/pages/dashboard.init.js"></Script>
       </>
     </html>
   );
