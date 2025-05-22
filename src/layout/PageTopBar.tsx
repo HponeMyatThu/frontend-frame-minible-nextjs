@@ -2,6 +2,10 @@ import Image from "next/image";
 import React from "react";
 
 const PageTopBar = () => {
+  if (typeof window !== "undefined") {
+    return;
+  }
+  
   return (
     <header id="page-topbar">
       <div className="navbar-header">

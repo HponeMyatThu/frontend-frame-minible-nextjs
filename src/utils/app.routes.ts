@@ -1,5 +1,5 @@
 export const AppRoute = () => {
   return {
-    DashboardPage: `/views/`,
+    DashboardPage: `/views/dashboard`,
   };
 };

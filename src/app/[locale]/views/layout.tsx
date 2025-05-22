@@ -18,7 +18,11 @@ export default function RootLayout({
           <PageTopBar />
           <VerticalMenu />
         </div>
-        {children}
+        <div className="main-content">
+          <div className="page-content">
+            <div className="container-fluid">{children}</div>
+          </div>
+        </div>
       </div>
     </body>
   );
